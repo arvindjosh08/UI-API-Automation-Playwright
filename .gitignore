@@ -1,0 +1,22 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+reports/
+logs/
+.env
+Results
+.idea
+.DS_Store
+assets
+@rerun.txt
+setting.json
+.vscode
+.test
+.last-run.json
+.features-gen
+playwright-report
