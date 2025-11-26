@@ -1,0 +1,22 @@
+[
+  {
+    "password": "admin",
+    "firstName": "Charlie",
+    "lastName": "Mason",
+    "address1": "46 Coronation Road",
+    "state": "NSW",
+    "city": "Baulkham Hills",
+    "zipCode": "2153",
+    "mobileNum": "0404588595"
+  },
+  {
+    "password": "admin",
+    "firstName": "Manjor",
+    "lastName": "Mason",
+    "address1": "46 Coronation Road",
+    "state": "NSW",
+    "city": "Baulkham Hills",
+    "zipCode": "2153",
+    "mobileNum": "0404588595"
+  }
+]
