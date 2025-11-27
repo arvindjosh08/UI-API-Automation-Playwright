@@ -13,6 +13,8 @@ export class SignUpPage extends BasePage{
   readonly city: Locator = this.page.locator('[id="city"]');
   readonly zipCode: Locator = this.page.locator('[id="zipcode"]');
   readonly mobile: Locator = this.page.locator('[id="mobile_number"]');
+  readonly createAccountButton: Locator = this.page.getByRole('button', { name: 'Create Account' });
+  readonly accountCreatedText: Locator = this.page.getByText('Account Created!');
 
 
 constructor(page: Page) {
@@ -30,6 +32,10 @@ async enterSignUpEmail(){
 
 async clickSignUpButton(){
   await this.click(this.signUpButton); 
+}
+
+async enterPassword(password : string){
+  await this.fill(this.password,password); 
 }
 
 async enterFirstName(firstName:string){
@@ -59,6 +65,10 @@ async enterZipCode(zipCode:string ){
 async enterMobile(mobile:string){
     await this.fill(this.mobile,mobile);
 
+}
+
+async clickCreateAccountButton(){
+  await this.click(this.createAccountButton); 
 }
 
 }
