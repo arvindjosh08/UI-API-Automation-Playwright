@@ -12,6 +12,7 @@ This is an enterprise-grade test automation framework built using **Playwright**
 - [Setup](#Installation)
 - [Running Tests](#Running-Tests)
 - [Logging](#Logging-and-Reporting)
+- [MCP Integration](#Playwright-MCP-Integration)
 - [CICD Integration](#CICD-Integration)
 
 ---
@@ -135,6 +136,7 @@ npm run test:regression:chromium
 npm run test:sit
 ```
 
+## Playwright MCP Integration
 [Playwright MCP(Model Context Protocol) - AI Test Generation](./docs/README-mcp.md)
 
 
