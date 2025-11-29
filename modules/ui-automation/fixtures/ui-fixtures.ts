@@ -2,12 +2,14 @@ import { test as base } from '@playwright/test';
 import { HomePage } from '../pages/home.page';
 import { LoginPage } from '../pages/login.page';
 import { SignUpPage } from '../pages/signup.page';
+import { ProductsPage } from '../pages/products.page';
 
 // Declare the types of your fixtures.
 type UiFixtures = {
   homePage: HomePage;
   loginPage: LoginPage;
   signupPage: SignUpPage;
+  productsPage: ProductsPage;
 };
 
 // Extend base test by providing "todoPage" and "settingsPage".
@@ -23,6 +25,10 @@ export const ui = base.extend<UiFixtures>({
 
    signupPage: async ({ page }, use) => {
     await use(new SignUpPage(page));
+  },
+
+  productsPage: async ({ page }, use) => {
+    await use(new ProductsPage(page));
   },
 });
 export { expect } from '@playwright/test';
