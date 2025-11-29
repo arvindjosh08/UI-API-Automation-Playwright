@@ -70,7 +70,7 @@ MCP: List servers
 With Roo, GitHub Copilot, or any AI code assistant, you can generate Playwright tests by providing your own sample test scenario.
 1. Open your AI assistant
 2. Copy and paste the sample scenario below which instructs the assistant to use the prompt file to generate your test.
-3. To generate a test, use the prompt located at: [`ui-automation/prompts/generate-test.prompt.md`](./modules/ui-automation/prompts/generate-test.prompt.md)
+3. To generate a test, use the prompt located at: [`ui-automation/prompts/generate-test.prompt.md`](../modules/ui-automation/prompts/generate-test.prompt.md)
 4. You can create your own prompts by following implementation patterns [`docs/ai-test-generation-guidelines.md`](./ai-test-generation-guidelines.md)
 
 ``` bash
