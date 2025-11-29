@@ -3,12 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:regression:chromium": "playwright test --project=chromium --grep @regression",
+    "test:sit": "ENV=sit playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "@playwright/mcp": "^0.0.48",
     "@playwright/test": "^1.56.1",
     "@types/node": "^24.10.1"
   },
